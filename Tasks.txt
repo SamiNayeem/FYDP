@@ -1,0 +1,5 @@
+Navbar
+Footer
+Index Page
+Doctor Profile Page
+Patient Profile Page
