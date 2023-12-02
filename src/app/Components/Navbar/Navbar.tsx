@@ -14,8 +14,8 @@ const Navbar =()=>{
 			
             <nav className="relative px-4 py-4 flex justify-between items-center bg-white shadow-lg">
 			
-		<a className="text-3xl font-bold leading-none" href="#">
-			<Image src={ProjectLogo} height={60} width={50} className="ml-20" alt="ProjectLogo"></Image>
+		<a className="text-3xl font-bold leading-none flex items-center" href="#">
+			<Image src={ProjectLogo} height={60} width={50} className="ml-20" alt="ProjectLogo"></Image> CEHRSR
 		</a>
 		
 		<div className="lg:hidden">
@@ -55,7 +55,7 @@ const Navbar =()=>{
 			<li><a className="text-sm text-gray-400 hover:text-blue-500 font-bold" href="#">Contact</a></li>
 		</ul>
 		
-		<a className="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-500 text-sm text-white font-bold rounded-xl transition duration-200 mr-20" href="#">Login / Registration</a>
+		<a className="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200 mr-20" href="#">Login / Registration</a>
 	</nav>
 	<div className="navbar-menu relative z-50 hidden">
 		<div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>

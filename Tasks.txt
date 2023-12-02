@@ -1,5 +1,5 @@
-Navbar
-Footer
+Navbar -> Done
+Footer -> In Progress
 Index Page
 Doctor Profile Page
 Patient Profile Page
