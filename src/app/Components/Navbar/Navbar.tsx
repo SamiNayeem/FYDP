@@ -10,9 +10,10 @@ import ProjectLogo from 'public/logo CEHRSR.png';
 
 const Navbar =()=>{
     return(
+		
         <div>
 			
-            <nav className="relative px-4 py-4 flex justify-between items-center bg-white shadow-lg">
+            <nav className="w-full fixed px-4 py-4 flex justify-between items-center bg-white shadow-lg top-0">
 			
 		<a className="text-3xl font-bold leading-none flex items-center" href="#">
 			<Image src={ProjectLogo} height={60} width={50} className="ml-20" alt="ProjectLogo"></Image> CEHRSR

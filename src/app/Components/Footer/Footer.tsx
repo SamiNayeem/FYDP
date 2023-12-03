@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
     return(
         <div>
-            <footer className="w-full flex flex-col items-center bg-blue-400 text-center text-white fixed bottom-0">
+            <footer className="w-full flex flex-col items-center bg-blue-400 text-center text-white static bottom-0 bg-repeat bg-scroll">
                 <div className="container pt-5">
                     <div className="mb-9 flex justify-center">
                     <a href="#!" className="mr-9 text-white-600">

@@ -1,4 +1,4 @@
-Navbar -> Done
+Navbar -> Done -> it should be fixed on top
 Footer -> In Progress
 Index Page
 Doctor Profile Page

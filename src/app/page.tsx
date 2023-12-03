@@ -3,8 +3,8 @@ import Navbar from './Components/Navbar/Navbar'
 
 export default function Home() {
   return (
-    <div>
-      
+    <div className='mt-40'>
+      <h1>Hello</h1>
     </div>
   )
 }
