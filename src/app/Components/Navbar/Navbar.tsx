@@ -13,7 +13,7 @@ const Navbar =()=>{
 		
         <div>
 			
-            <nav className="w-full fixed px-4 py-4 flex justify-between items-center bg-white shadow-lg top-0">
+            <nav className="w-full absolute px-4 py-4 flex justify-between items-center bg-white shadow-lg top-0">
 			
 		<a className="text-3xl font-bold leading-none flex items-center" href="#">
 			<Image src={ProjectLogo} height={60} width={50} className="ml-20" alt="ProjectLogo"></Image> CEHRSR
@@ -47,12 +47,12 @@ const Navbar =()=>{
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
-			{/* <li><a className="text-sm text-gray-400 hover:text-blue-500 font-bold" href="#">Pricing</a></li>
+			<li><a className="text-sm text-gray-400 hover:text-blue-500 font-bold" href="#">FAQ</a></li>
 			<li className="text-gray-300">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
-			</li> */}
+			</li>
 			<li><a className="text-sm text-gray-400 hover:text-blue-500 font-bold" href="#">Contact</a></li>
 		</ul>
 		
