@@ -41,19 +41,19 @@ const Navbar =()=>{
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
-			<li><a className="text-sm text-gray-400 hover:text-blue-500 font-bold" href="#">Services</a></li>
-			<li className="text-gray-300">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-				</svg>
-			</li>
 			<li><a className="text-sm text-gray-400 hover:text-blue-500 font-bold" href="#">FAQ</a></li>
 			<li className="text-gray-300">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
-			<li><a className="text-sm text-gray-400 hover:text-blue-500 font-bold" href="#">Contact</a></li>
+			<li><a className="text-sm text-gray-400 hover:text-blue-500 font-bold" href="#">Contacts</a></li>
+			{/* <li className="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a className="text-sm text-gray-400 hover:text-blue-500 font-bold" href="#">Contact</a></li> */}
 		</ul>
 		
 		<a className="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200 mr-20" href="#">Login / Registration</a>
@@ -73,25 +73,7 @@ const Navbar =()=>{
 					</svg>
 				</button>
 			</div>
-			<div>
-				<ul>
-					<li className="mb-1">
-						<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
-					</li>
-					<li className="mb-1">
-						<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
-					</li>
-					<li className="mb-1">
-						<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Services</a>
-					</li>
-					<li className="mb-1">
-						<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Pricing</a>
-					</li>
-					<li className="mb-1">
-						<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
-					</li>
-				</ul>
-			</div>
+			
 			<div className="mt-auto">
 				<div className="pt-6">
 					<a className="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
