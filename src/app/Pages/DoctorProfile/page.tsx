@@ -84,7 +84,7 @@ const page = () => {
                 <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, veniam natus. Quasi facere numquam exercitationem pariatur alias iusto voluptatibus adipisci recusandae voluptas. Ducimus expedita corrupti molestiae eius ipsam? Ea soluta natus modi, exercitationem consequuntur maiores reprehenderit quisquam error at eius consequatur molestias sapiente labore magni tempora praesentium dignissimos delectus eos sit. Architecto hic dolore dicta velit nam modi nulla incidunt quam explicabo, sunt saepe maxime consectetur corporis numquam a ducimus itaque! Eos totam officia eaque libero corrupti nemo quas vitae est, exercitationem, dolorem incidunt neque sunt quisquam rem fuga qui animi iusto dolorum culpa blanditiis error excepturi necessitatibus! Eius, sed!
                 </p>
-                <a href="#" className="show-more font-normal text-pink-500">Show more</a>
+                <a href="EditProfile" className="show-more font-normal text-pink-500">Edit Profile</a>
               </div>
             </div>
             
