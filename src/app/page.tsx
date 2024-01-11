@@ -60,7 +60,7 @@ export default function Home() {
         </section>
 
         
-        <section id='faq'>
+        <section id='faq' className='mt-10'>
           <FAQ/>
         </section>
       
