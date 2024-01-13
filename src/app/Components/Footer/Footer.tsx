@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
     return(
         <div>
-            <footer className="w-full flex flex-col items-center bg-blue-400 text-center text-white bottom-0 bg-repeat bg-scroll">
+            <footer className="w-full flex flex-col items-center bg-blue-400 text-center text-white bottom-0 bg-repeat bg-scroll mt-20">
                 <div className="container pt-5">
                     <div className="mb-9 flex justify-center">
                     <a href="#!" className="mr-9 text-white-600">
@@ -73,7 +73,7 @@ const Footer = () => {
                     </div>
 
                     <div className="w-full pt-0">
-                        © 2023 Copyright: ErrorSage
+                        © 2024 Copyright: ErrorSage
                         
                     </div>
                 </div>
