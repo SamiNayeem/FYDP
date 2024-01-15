@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function WelcomeDoctor() {
     return (
-        <main className="flex flex-col justify-center items-center">
+        <main className="flex flex-col justify-center items-center mt-40">
             <h1 className="text-3xl font-bold text-center border-b-4 border-blue-800 mt-20 mb-5">Welcome Doctor X
             </h1>
             <div className="flex items-center justify-center">

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import { useAuth } from "@/hooks/useAuth";
+// import { useAuth } from "@/hooks/useAuth";
 import { Router } from "next/router";
 
 export default function WelcomePatient() {
@@ -14,7 +14,7 @@ export default function WelcomePatient() {
   if (!auth) return router.push("/login"), (<p>Redirecting...</p>);
 
   return (
-    <main className="flex flex-col justify-center items-center">
+    <main className="flex flex-col justify-center items-center mt-40">
       <h1 className="text-3xl font-bold text-center border-b-4 border-blue-800 mt-10 mb-5">
         Welcome Patient {JSON.stringify(auth.username)}
       </h1>

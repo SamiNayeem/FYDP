@@ -58,7 +58,7 @@ export default function RegForm() {
 
     return (
         <main> 
-            <div className="w-1/2 border-blue-700 border-2 rounded-md mx-auto my-20">
+            <div className="w-1/2 border-blue-700 border-2 rounded-md mx-auto my-20 ">
                 <div className="flex items-center justify-center">
                     <form className="py-10 flex-col" onSubmit={submit}>
                         <div className="mb-4">

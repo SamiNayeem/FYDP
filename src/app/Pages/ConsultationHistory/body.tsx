@@ -2,7 +2,7 @@ import * as React from 'react'
 
 export default function ConsultationHistory() {
     return (
-        <main className="flex flex-col items-center justify-center">
+        <main className="flex flex-col items-center justify-center mt-40">
             <h1 className="text-3xl font-bold border-b-4 border-blue-500 mt-20 mb-5">Consultation History
             </h1>
             <div className="overflow-auto rounded-lg shadow mb-10">
