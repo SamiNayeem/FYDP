@@ -3,7 +3,7 @@ import { useRef } from 'react';
 // import * as html2pdf from 'html2pdf.js';
 
 
-const Main = () => {
+export default function Main(){
     return(
         <section className="py-1 bg-blueGray-50 mt-40">
             <div className="w-full lg:w-8/12 px-4 mx-auto mt-6">
@@ -30,7 +30,7 @@ const Main = () => {
                                 <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                     Record No
                                 </label>
-                                <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="19xx15456" readOnly/>
+                                {/* <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="19xx15456" readOnly/> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -38,7 +38,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Date
                                     </label>
-                                    <input type="date" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="" readOnly/>
+                                    {/* <input type="date" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="" readOnly/> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -46,7 +46,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Patient's Name
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Sami Nayeem" readOnly/>
+                                    {/* <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="Sami Nayeem" readOnly/> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -54,7 +54,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         National ID
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="93xx154" readOnly/>
+                                    {/* <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="93xx154" readOnly/> */}
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const Main = () => {
                                 <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                     Doctor's Name
                                 </label>
-                                <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Saadman Sakib Mihad" readOnly />
+                                {/* <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="Saadman Sakib Mihad" readOnly /> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -81,7 +81,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         BM & DC License No
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="4154xx18654" readOnly/>
+                                    {/* <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="4154xx18654" readOnly/> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -89,7 +89,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Hospital
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Square Hospital" readOnly/>
+                                    {/* <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="Square Hospital" readOnly/> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -97,7 +97,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Location
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Dhanmondi,Dhaka" readOnly/>
+                                    {/* <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="Dhanmondi,Dhaka" readOnly/> */}
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ const Main = () => {
                                 <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                     Identified Disease
                                 </label>
-                                <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="FYDP" readOnly/>
+                                {/* <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="FYDP" readOnly/> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -124,7 +124,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Advise
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="4154xx18654" readOnly/>
+                                    {/* <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="4154xx18654" readOnly/> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -132,7 +132,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Medicines
                                     </label>
-                                    <textarea  className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows={3} value="" readOnly/>
+                                    {/* <textarea  className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows={3} value=""></textarea> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -140,7 +140,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Additional Comments
                                     </label>
-                                    <textarea  className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows={3} value="" readOnly/>
+                                    {/* <textarea  className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows={3} value=""></textarea> */}
                                 </div>
                             </div>
                         </div>
@@ -150,7 +150,7 @@ const Main = () => {
                 </div>
             </div>
         </section>
-    )
+    );
+
 }
 
-export default Main;
