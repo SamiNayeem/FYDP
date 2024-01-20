@@ -1,4 +1,7 @@
 import React from "react";
+import { useRef } from 'react';
+// import * as html2pdf from 'html2pdf.js';
+
 
 const Main = () => {
     return(
@@ -10,8 +13,8 @@ const Main = () => {
                             <h6 className="text-blueGray-700 text-xl font-bold">
                                 EHR History
                             </h6>
-                            <button className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
-                                Go Back
+                            <button className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+                                Download EHR
                             </button>
                         </div>
                     </div>
@@ -27,7 +30,7 @@ const Main = () => {
                                 <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                     Record No
                                 </label>
-                                <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="19xx15456"></input>
+                                <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="19xx15456" readOnly/>
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -35,7 +38,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Date
                                     </label>
-                                    <input type="date" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value=""></input>
+                                    <input type="date" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="" readOnly/>
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -43,7 +46,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Patient's Name
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Sami Nayeem"></input>
+                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Sami Nayeem" readOnly/>
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -51,7 +54,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         National ID
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="93xx154"></input>
+                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="93xx154" readOnly/>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +73,7 @@ const Main = () => {
                                 <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                     Doctor's Name
                                 </label>
-                                <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Saadman Sakib Mihad"></input>
+                                <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Saadman Sakib Mihad" readOnly />
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -78,7 +81,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         BM & DC License No
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="4154xx18654"></input>
+                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="4154xx18654" readOnly/>
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -86,7 +89,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Hospital
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Square Hospital"></input>
+                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Square Hospital" readOnly/>
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -94,7 +97,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Location
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Dhanmondi,Dhaka"></input>
+                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="Dhanmondi,Dhaka" readOnly/>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +116,7 @@ const Main = () => {
                                 <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                     Identified Disease
                                 </label>
-                                <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="FYDP"></input>
+                                <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="FYDP" readOnly/>
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -121,7 +124,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Advise
                                     </label>
-                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="4154xx18654"></input>
+                                    <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value="4154xx18654" readOnly/>
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -129,7 +132,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Medicines
                                     </label>
-                                    <textarea  className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows={3} value=""></textarea>
+                                    <textarea  className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows={3} value="" readOnly/>
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
@@ -137,7 +140,7 @@ const Main = () => {
                                     <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                                         Additional Comments
                                     </label>
-                                    <textarea  className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows={3} value=""></textarea>
+                                    <textarea  className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows={3} value="" readOnly/>
                                 </div>
                             </div>
                         </div>
