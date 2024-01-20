@@ -34,108 +34,72 @@ export default function ConsultationHistory(){
     },[])
 
     return (
-        <main className="flex flex-col items-center justify-center mt-40">
-            <h1 className="text-3xl font-bold border-b-4 border-blue-500 mt-20 mb-5">Consultation History
-            </h1>
-            <div className="overflow-auto rounded-lg shadow mb-10 ">
-                <table className=" w-auto table-auto flex flex-col">
+        // <main classNameName="flex flex-col items-center justify-center mt-40">
+        //     <h1 classNameName="text-3xl font-bold border-b-4 border-blue-500 mt-20 mb-5">Consultation History
+        //     </h1>
+        //     <div classNameName="overflow-auto rounded-lg shadow mb-10 ">
+        //         <table classNameName=" w-full flex flex-col h-60">
+        //             <thead classNameName="bg-blue-200 border-b-2 border-blue-300 sticky">
+        //                 <tr classNameName="border border-solid border-l-0 border-r-0">
+        //                     <th classNameName="text-md px-10 py-5 border w-1/4">Date</th>
+        //                     <th classNameName="text-md px-10 py-5 border w-1/4">Hospital</th>
+        //                     <th classNameName="text-md px-10 py-5 border w-1/4">Doctor</th>
+        //                     <th classNameName="text-md px-10 py-5 border w-1/4"></th>
+        //                 </tr>
+        //             </thead>
+        //             <tbody classNameName=' overflow-y-scroll h-3/4' >
+        //                 <tr classNameName="hover:bg-gray-50">
+        //                     <td classNameName="text-md px-10 py-4 border w-1/4">{date}</td>
+        //                     <td classNameName="text-md px-10 py-4 border w-1/4">{hospital}</td>
+        //                     <td classNameName="text-md px-10 py-4 border w-1/4">{doctor}</td>
+        //                     <td classNameName="text-md px-10 py-4 border w-1/4">
+        //                         <button classNameName="bg-blue-500 text-white rounded-full p-2 w-40 hover:bg-blue-700">
+        //                             View Details
+        //                         </button>
+        //                     </td>
+        //                 </tr>
+                        
+                        
+                        
+        //             </tbody>
+        //         </table>
+        //     </div>
+        //     <div classNameName="flex mt-4">
+        //         <button classNameName="bg-blue-500 text-white px-4 py-2 mr-10 rounded">
+        //             Back to Previous Page
+        //         </button>
+        //         <button classNameName="bg-blue-500 text-white px-4 py-2 rounded">
+        //             Summarized Report
+        //         </button>
+        //     </div>
+        // </main>
+        <main className='mt-40'>
+            <h1 className="text-3xl text-center font-bold border-b-4 border-blue-500 mt-20 mb-20 w-80 mx-auto">Consultation History  </h1>
+            <div className="rounded-lg">
+                
+
+                <table className="text-center w-3/4 mx-60 overflow-y">
                     <thead className="bg-blue-200 border-b-2 border-blue-300 sticky">
-                        <tr className="border border-solid border-l-0 border-r-0">
-                            <th className="text-md px-10 py-5 border">Date</th>
-                            <th className="text-md px-10 py-5 border">Hospital</th>
-                            <th className="text-md px-10 py-5 border">Doctor</th>
-                            <th className="text-md px-10 py-5 border"></th>
+                        <tr className="flex w-full mb-4">
+                            <th className="p-4 w-1/4">Date</th>
+                            <th className="p-4 w-1/4">Hospital</th>
+                            <th className="p-4 w-1/4">Doctor</th>
+                            <th className="p-4 w-1/4">View EHR</th>
                         </tr>
                     </thead>
-                    <tbody className=' overflow-y-scroll h-1/2' >
-                        <tr className="hover:bg-gray-50">
-                            <td className="text-md px-8 py-4 border">{date}</td>
-                            <td className="text-md px-8 py-4 border">{hospital}</td>
-                            <td className="text-md px-8 py-4 border">{doctor}</td>
-                            <td className="text-md px-8 py-4 border">
-                                <button className="bg-blue-500 text-white rounded-full p-2 w-40 hover:bg-blue-700">
-                                    View Details
-                                </button>
-                            </td>
+                
+                    <tbody className="bg-grey-light flex flex-col items-center justify-between overflow-y-scroll w-full max-h-96">
+                        <tr className="flex w-full  border border-solid border-l-0 border-r-0">
+                            <td className="p-4 w-1/4">{date}</td>
+                            <td className="p-4 w-1/4">{hospital}</td>
+                            <td className="p-4 w-1/4">{doctor}</td>
+                            <td className="p-4 w-1/4"><button className="bg-blue-500 text-white rounded-full p-2 w-40 hover:bg-blue-700">View Details</button></td>
                         </tr>
                         
-                        {/* dummy */}
-                        <tr className="hover:bg-gray-50">
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{date}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{hospital}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{doctor}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">
-                                <button className="bg-blue-500 text-white rounded-full p-2 w-40 hover:bg-blue-700">
-                                    View Details
-                                </button>
-                            </td>
-                        </tr>
-                        {/* dummy */}
-                        <tr className="hover:bg-gray-50">
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{date}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{hospital}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{doctor}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">
-                                <button className="bg-blue-500 text-white rounded-full p-2 w-40 hover:bg-blue-700">
-                                    View Details
-                                </button>
-                            </td>
-                        </tr>
-                        {/* dummy */}
-                        <tr className="hover:bg-gray-50">
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{date}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{hospital}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{doctor}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">
-                                <button className="bg-blue-500 text-white rounded-full p-2 w-40 hover:bg-blue-700">
-                                    View Details
-                                </button>
-                            </td>
-                        </tr>
-                        {/* dummy */}
-                        <tr className="hover:bg-gray-50">
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{date}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{hospital}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{doctor}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">
-                                <button className="bg-blue-500 text-white rounded-full p-2 w-40 hover:bg-blue-700">
-                                    View Details
-                                </button>
-                            </td>
-                        </tr>
-                        {/* dummy */}
-                        <tr className="hover:bg-gray-50">
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{date}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{hospital}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{doctor}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">
-                                <button className="bg-blue-500 text-white rounded-full p-2 w-40 hover:bg-blue-700">
-                                    View Details
-                                </button>
-                            </td>
-                        </tr>
-                        {/* dummy */}
-                        <tr className="hover:bg-gray-50">
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{date}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{hospital}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">{doctor}</td>
-                            <td className="text-md px-8 py-4 border whitespace-nowrap">
-                                <button className="bg-blue-500 text-white rounded-full p-2 w-40 hover:bg-blue-700">
-                                    View Details
-                                </button>
-                            </td>
-                        </tr>
+                        
                         
                     </tbody>
                 </table>
-            </div>
-            <div className="flex mt-4">
-                <button className="bg-blue-500 text-white px-4 py-2 mr-10 rounded">
-                    Back to Previous Page
-                </button>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded">
-                    Summarized Report
-                </button>
             </div>
         </main>
     )
