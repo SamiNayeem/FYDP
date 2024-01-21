@@ -18,3 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.notification-box {
+  width:20rem;
+}
