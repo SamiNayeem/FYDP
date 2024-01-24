@@ -118,7 +118,7 @@ const FAQItems = ({ header, text, }) => {
         </div>
 
         <div className="w-full">
-          <h4 className="mt-1 text-lg font-semibold text-dark dark:text-white">
+          <h4 className="mt-1 text-lg font-semibold text-dark">
             {header}
           </h4>
         </div>

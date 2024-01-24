@@ -2,73 +2,37 @@ import React from "react";
 
 export default function Main(){
     return(
-        <main className="mx-auto">
+        <main className="mx-auto mt-40">
             
-            <div className="shadow-lg rounded-lg bg-white mx-auto m-8 p-4 notification-box mt-40">
-                <div className="text-sm pb-2">
-                Notification Title
-                <span className="float-right">
-                    <svg
-                    className="fill-current text-gray-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="22"
-                    height="22"
-                    >
-                    <path
-                        className="heroicon-ui"
-                        d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
-                    />
-                    </svg>
-                </span>
-                </div>
-                <div className="text-sm text-gray-600  tracking-tight ">
-                I will never close automatically. This is a purposely very very long
-                description that has many many characters and words.
-                </div>
+            
+            <h1 className="text-3xl text-center font-bold border-b-4 border-blue-500 mt-20 mb-20 w-80 mx-auto">Consultation History  </h1>
+            <div className="rounded-lg">
+                
+
+                <table className="text-center h-80 w-3/4 mx-60 overflow-y">
+                    <thead className="bg-blue-200 border-b-2 border-blue-300 sticky">
+                        <tr className="flex w-full mb-4">
+                            <th className="p-4 w-1/4">Time</th>
+                            <th className="p-4 w-1/4">OTP</th>
+                            
+                            <th className="p-4 w-1/4">Delete</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody className="bg-grey-light flex flex-col items-center justify-between overflow-y-scroll w-full max-h-96">
+                        <tr className="flex w-full  border border-solid border-l-0 border-r-0">
+                            <td className="p-4 w-1/4"></td>
+                            <td className="p-4 w-1/4"></td>
+                            
+                            <td className="p-4 w-1/4"><button className="bg-blue-500 text-white rounded-full p-2 w-40 hover:bg-blue-700">Delete</button></td>
+                        </tr>
+                        
+                        
+                        
+                    </tbody>
+                </table>
             </div>
-
-            {/* 2nd notification */}
-
-            <div className="shadow-lg rounded-lg bg-white mx-auto m-8 p-4 notification-box flex">
-        <div className="pr-2">
-          <svg
-            className="fill-current text-green-600"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="22"
-            height="22"
-          >
-            <path
-              className="heroicon-ui"
-              d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-3.54-4.46a1 1 0 0 1 1.42-1.42 3 3 0 0 0 4.24 0 1 1 0 0 1 1.42 1.42 5 5 0 0 1-7.08 0zM9 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm6 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-            />
-          </svg>
-        </div>
-        <div>
-          <div className="text-sm pb-2">
-            Notification Title
-            <span className="float-right">
-              <svg
-                className="fill-current text-gray-600"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="22"
-                height="22"
-              >
-                <path
-                  className="heroicon-ui"
-                  d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
-                />
-              </svg>
-            </span>
-          </div>
-          <div className="text-sm text-gray-600  tracking-tight ">
-            I will never close automatically. This is a purposely very very long
-            description that has many many characters and words.
-          </div>
-        </div>
-      </div>
+            
         
         </main>
         
