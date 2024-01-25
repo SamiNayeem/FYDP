@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Pages/signinZeba/page.jsx", "src/app/Components/FAQ/FAQ.jsx", "src/app/Pages/HospitalLogin/body.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Pages/signinZeba/page.jsx", "src/app/Components/FAQ/FAQ.jsx", "src/app/Pages/HospitalLogin/body.jsx", "src/app/Components/Footer/Footer.jsx"],
   "exclude": ["node_modules"]
 }

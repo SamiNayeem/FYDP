@@ -5,8 +5,8 @@ import Preloader from "@/app/Components/Preloader/Preloader";
 
 const Main = () => {
     return(
-        <div>
-            <Preloader/>
+        <div className="mt-40">
+            
         </div>
     )
 }

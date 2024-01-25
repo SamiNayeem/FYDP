@@ -60,7 +60,39 @@ CredentialsProvider({
         randomKey: 'Hey cool',
       }  // Adjust User type accordingly
       
+    } 
+    else if(type == 'hospital'){
+      const { license_number, password } = credentials as {
+        license_number: string;
+        password: string;
+      };
+
+      const user = await prisma.hospital.findUnique({
+        where: {
+          license_number: license_number,
+        },
+      });
+
+      if (!user) {
+        return null;
+      }
+
+      const isPasswordValid = password === user.password;
+
+      if (!isPasswordValid) {
+        return null;
+      }
+
+      return {
+        id: user.hospital_id + '',
+        license_number: user.license_number,
+        name: user.username,
+        type: "hospital",
+        randomKey: 'Hey cool',
+      }  // Adjust User type accordingly
     }
+
+    
 
     else if (type === 'patient' ) 
      {
@@ -69,6 +101,9 @@ CredentialsProvider({
         return user;
   }
     }}
+
+    // 
+    
 ),
 
 

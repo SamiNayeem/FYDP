@@ -4,9 +4,7 @@ import Image from "next/image";
 
 
 
-import appointment from 'public/consulting.png';
-import doclist from 'public/doctor.png'
-import docregistration from 'public/DoctorUserImageMale.png'
+
 
 export default function WelcomeDoctor() {
     return (
@@ -17,7 +15,7 @@ export default function WelcomeDoctor() {
                 <button
                     className="flex flex-col items-center justify-center w-400 h-400 border border-blue-600 text-blue font-bold px-20 py-10 m-10 rounded-md hover:bg-blue-200"
                 >
-                    <Image src={appointment} alt="consulting" id="consulting" height={200} width={130} />
+                    <Image src="/consulting.png" alt="consulting" id="consulting" height={200} width={130} />
                     
 
                     Doctor Appointment
@@ -25,7 +23,7 @@ export default function WelcomeDoctor() {
                 <button
                     className="flex flex-col items-center justify-center w-400 h-400 border border-blue-600 text-blue font-bold px-20 py-10 m-10 rounded-md hover:bg-blue-200"
                 >
-                    <Image src={doclist} alt="affilieddoc" id="affilieddoc" height={200} width={130} />
+                    <Image src={"/consulting.png"} alt="affilieddoc" id="affilieddoc" height={200} width={130} />
 
                     Doctor List
                 </button>
@@ -33,7 +31,7 @@ export default function WelcomeDoctor() {
                 <button
                     className="flex flex-col items-center justify-center w-400 h-400 border border-blue-600 text-blue font-bold px-20 py-8 m-10 rounded-md hover:bg-blue-200"
                 >
-                    <Image src={docregistration} alt="report" id="report" height={100} width={130} />
+                    <Image src={"/consulting.png"} alt="report" id="report" height={100} width={130} />
 
                     Register New Doctor
                 </button>

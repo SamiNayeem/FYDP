@@ -33,7 +33,7 @@ function Loginbody() {
     } else {
     
       router.refresh();
-      router.replace('/HospitalDashboard');
+      router.replace('/Hospital/HospitalDashboard');
       router.refresh();
 
     }

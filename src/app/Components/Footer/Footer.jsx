@@ -2,10 +2,12 @@ import React from "react";
 
 
 
-const Footer = () => {
+const Footer = ({children}) => {
     return(
-        <div className="flex ">
-            <footer className="w-full relative flex-col items-center bg-blue-400 text-center text-white bottom-0 bg-repeat bg-scroll px-80 ">
+        <div className="flex flex-col h-1/2relative">
+            <main>{children}</main>
+        <div className="  ">
+            <footer className="bottom-0 absolute w-full flex-col items-center bg-blue-400 text-center text-white px-80 mt-auto">
                 <div className="container pt-5">
                     <div className="mb-9 flex justify-center">
                     <a href="#!" className="mr-9 text-white-600">
@@ -82,6 +84,10 @@ const Footer = () => {
                 
             </footer>
         </div>
+
+        </div>
+
+        
     )
 };
 
