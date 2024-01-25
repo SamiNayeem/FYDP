@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Navbar from './Components/Navbar/Navbar'
+
 import FAQ from './Components/FAQ/FAQ'
 import Link from 'next/link'
 import Contact from './Components/Contacts/Contact'

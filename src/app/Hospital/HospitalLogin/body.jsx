@@ -2,71 +2,46 @@
 
 import React from "react";
 import Image from "next/image";
-// import { signIn } from "next-auth/react";
+import { signIn } from "next-auth/react";
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import ProjectLogo from "public/logo CEHRSR.png";
 
-function LoginBody() {
+function Loginbody() {
   const router = useRouter();
-
-  const [login, setLogin] = useState(false);
-  
-  const [national_id, setnational_id] = useState("");
-
-  const [password, setPassword] = useState("");
+  const [license_number, setlicense_number] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
-
-  const Psubmit = async (e) => {
-    e.preventDefault();
-    const result = await signIn('credentials', {
-      redirect: false,
-      national_id: national_id,
-      password: password,
-      type: "patient",
-
-
-    });
-
-
-    if (result?.error) {
-        console.log(result.error);
-      setError(true);
-    } else {
-      router.refresh();
-      router.push('/dashboard');
-      router.refresh();
-
-    }
-  };
 
   const submit = async (e) => {
     e.preventDefault();
 
-    const credentials = { national_id, password };
+    const credentials = { license_number, password };
 
-    const result = await signIn("credentials", {
+    const result = await signIn('credentials', {
       redirect: false,
-      national_id: credentials.national_id,
-      type: "doctor",
+      license_number: credentials.license_number,
+      type: "hospital",
 
       password: credentials.password,
     });
 
     if (result?.error) {
-      console.log(result.error);
+        console.log(result.error);
       setError(true);
     } else {
+    
       router.refresh();
-      router.push("/dashboard");
+      router.replace('/HospitalDashboard');
       router.refresh();
+
     }
   };
 
   return (
       <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 mt-40">
-        <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+        <div className="sm:mx-auto sm:w-full">
           {/* <img className="mx-auto h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company"> */}
           <Image
             src={ProjectLogo}
@@ -75,8 +50,8 @@ function LoginBody() {
             className="mx-auto w-auto"
             alt="ProjectLogo"
           ></Image>
-          <div className=" flex sm:mx-auto sm:w-full sm:max-w-sm">
-          <h1 className="text-center font-extrabold text-sky-700 tracking-tight text-6xl">Hospital Admin</h1>
+          <div className=" flex sm:mx-auto sm:w-full ">
+          <h1 className="text-center font-extrabold text-sky-700 tracking-tight text-6xl mx-auto">Hospital Admin</h1>
           </div>
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             Sign in to your account
@@ -95,8 +70,8 @@ function LoginBody() {
                   type="text"
                   className="border border-sky-700 rounded p-1 text-sm flex-1"
                   required
-                  value={national_id}
-                  onChange={(e) => setnational_id(e.target.value)}
+                  value={license_number}
+                  onChange={(e) => setlicense_number(e.target.value)}
                 />
               </div>
               <div className="mb-4">
@@ -134,4 +109,4 @@ function LoginBody() {
   );
 }
 
-export default LoginBody;
+export default Loginbody;

@@ -10,23 +10,32 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Doctor{
-  id Int @id @default(autoincrement())
-  first_name String
-  last_name String
-  nid String @unique
-  phone String @unique
-  email String @unique
-  password String
-  bmdc String @unique
+
+// doctors.prisma
+
+model doctor{
+  doctor_id              Int       @id @default(autoincrement())
+  first_name             String    @db.VarChar(255)
+  last_name              String    @db.VarChar(255)
+  national_id            String    @unique @db.VarChar(20)
+  phone_number           String?   @db.VarChar(15)
+  email                  String    @unique @db.VarChar(255)
+  password               String    @db.VarChar(255)
+  bm_dc_license_number   String    @unique @db.VarChar(20)
+  assoc_hospital_id      Int
+  hospital               Hospital? @relation(fields: [assoc_hospital_id], references: [hospital_id])
 }
 
-model Hospital{
-  id Int @id @default(autoincrement())
-  name String
-  address String
-  location String
-  email String @unique
-  phone String @unique
-  
+model Hospital {
+  hospital_id       Int       @id @default(autoincrement())
+  license_number    String    @unique @db.VarChar(20)
+  name              String    @db.VarChar(255)
+  username          String    @unique @db.VarChar(50)
+  password          String    @db.VarChar(255)
+  address           String?   @db.VarChar(255)
+  phone_number      String?   @db.VarChar(15)
+  email             String?   @unique @db.VarChar(255)
+  created_at        DateTime  @default(now()) @db.Timestamp(6)
+  doctors           doctor[]
 }
+
