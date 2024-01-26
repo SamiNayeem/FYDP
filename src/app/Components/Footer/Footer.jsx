@@ -6,8 +6,8 @@ const Footer = ({children}) => {
     return(
         <div className="flex flex-col h-1/2relative">
             <main>{children}</main>
-        <div className="  ">
-            <footer className="bottom-0 absolute w-full flex-col items-center bg-blue-400 text-center text-white px-80 mt-auto">
+        <div className="bottom-0  ">
+            <footer className="fixed bottom-0 w-full flex-col items-center bg-blue-400 text-center text-white px-80 mt-auto ">
                 <div className="container pt-5">
                     <div className="mb-9 flex justify-center">
                     <a href="#!" className="mr-9 text-white-600">

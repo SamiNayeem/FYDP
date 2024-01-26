@@ -14,16 +14,10 @@ const Main = () => {
         <input required type="text" id="nid" className="w-full rounded-md appearance-none border border-gray-300 py-2 px-2 bg-white text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-600 focus:border-transparent" readOnly/>
       </div>
     </div>
+    
+    
     <div className="flex justify-between items-center">
-      <label htmlFor="name" className="w-32 text-right pr-4 font-bold text-gray-700">Name</label>
-      <input  type="text" id="name" className="w-52 rounded-md flex-1 appearance-none border border-gray-300 py-2 px-2 bg-white text-gray-700 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-600 focus:border-transparent" readOnly/>
-    </div>
-    <div className="flex justify-between items-center">
-      <label htmlFor="age" className="w-32 text-right pr-4 font-bold text-gray-700">Age</label>
-      <input  type="number" id="age" className="w-52 rounded-md flex-1 appearance-none border border-gray-300 py-2 px-2 bg-white text-gray-700 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-600 focus:border-transparent" readOnly/>
-    </div>
-    <div className="flex justify-between items-center">
-      <label htmlFor="summary" className="self-start w-32 text-right mt-2 pr-4 font-bold text-gray-700">About</label>
+      <label htmlFor="summary" className="self-start w-32 text-right mt-2 pr-4 font-bold text-gray-700">Summary</label>
       <textarea disabled id="about" name="about" rows={6} className="disabled:bg-gray-100 w-full flex-1 placeholder:text-slate-400 appearance-none border border-gray-300 py-2 px-2 bg-white text-gray-700 placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-600" readOnly></textarea>
     </div>
     
